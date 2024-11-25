@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking</title>
+    <link rel="stylesheet" href="./style/order.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+=
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">Hacker's Test</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./">about</a></li>
+                <li><a href="./cart.html">Service</a></li>
+                <li><a href="./myorder.html">Order</a></li>
+            </ul>
+        </nav>
+        <div class="uers">
+            <div id="cart-count">
+                <div class="count" id="count"></div><i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </header>
+    <section>
+
+        <div class="form-container">
+            <div class="heading">
+                <h1>Product Order Form</h1>
+            </div>
+            <div class="order-form">
+                <label for="fullname">fullname</label>
+                <div class="input-name input">
+                    <input type="text" placeholder="Enter your firstname" name="firsname" id="firstname">
+                    <input type="text" placeholder="Enter your lastname" name="lastname" id="lastname">
+                </div>
+                <label for="email">Email</label>
+                <div class="input-email input">
+                    <input type="email" placeholder="Enter your email" name="email" id="email">
+                </div>
+                <label for="phonenumber">phone Number</label>
+                <div class="input-phone input">
+                    <input type="number" placeholder="Enter your phonenumber" id="phonenumber">
+                </div>
+                <label for="address">Shipping Addree</label>
+                <div class="input-address input">
+                    <input type="text" placeholder="Enter your address" id="address1">
+                    <input type="text" placeholder="Enter your address" id="address2">
+                </div>
+                <input type="submit" value="Next" class="btn" onclick="OrderSubmit()">
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/order.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart page</title>
+    <link rel="stylesheet" href="./style/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">Hacker's Test</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./">about</a></li>
+                <li><a href="./cart.html">Service</a></li>
+                <li><a href="./myorder.html">Order</a></li>
+            </ul>
+        </nav>
+        <div class="uers">
+            <div id="cart-count">
+                <div class="count" id="count"></div><i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </header>
+    <section class="cart" id="cart">
+        <div class="cart-container" id="cart-container">
+            
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-box">
+            <div class="box box1">
+                <h1>about us</h1>
+                <p>Hello my name is momim hussain. I'm a web developer. I create responsive website. </p>
+            </div>
+            <div class="box box2">
+                <h1>Use full link</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#service">Service</a></li>
+                </ul>
+            </div>
+            <div class="box box3">
+                <h1>Social link</h1>
+                <ul>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">instagram</a></li>
+                    <li><a href="#">Linkdin</a></li>
+                    <li><a href="#">twiter</a></li>
+                </ul>
+            </div>
+            <div class="box box4">
+                <h1>Contact us</h1>
+                <ul>
+                    <li><a href="#">+92-3112891862</a></li>
+                    <li><a href="#">mominqayoome346@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>create by Momin Hussain All right reserve</p>
+        </div>
+    </footer>
+    <div class="total-price" id="total-price"></div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+
+</html>

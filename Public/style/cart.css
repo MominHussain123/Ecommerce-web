@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
+section {
+    padding: 4% 5%;
+    min-height: 100vh;
+}
+
+body {
+    background: #F2F4F7;
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px;
+    z-index: 1000;
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+    display: flex;
+    align-items: center;
+    padding: 0 4%;
+    background-color: #000;
+    justify-content: space-between;
+}
+
+.header .uers {
+    color: #fff;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.header .uers button {
+    width: 5rem;
+    height: 2rem;
+    background-color: #fff;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 8px;
+
+    &:active {
+        background-color: #F5F5F5;
+    }
+}
+
+.header .uers div {
+    width: 2.6rem;
+    height: 2.6rem;
+    display: grid;
+    place-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.header .uers div .count {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 10px;
+}
+
+.header .uers div i {
+    font-size: 1.5rem;
+}
+
+.header ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    text-transform: capitalize;
+
+    li {
+        color: #fff;
+
+        a {
+            color: #fff;
+        }
+    }
+}
+
+
+
+.total-price {
+    position: fixed;
+    right: 0;
+    top: 12vh;
+    background-color: #000;
+    color: #fff;
+    height: 8vh;
+    width: 14%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.cart-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 5rem;
+}
+
+.cart-container .product-box {
+    border-radius: 1rem;
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px inset;
+}
+
+
+.cart-container .product-box .image {
+    background-size: cover;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 20%;
+
+    img {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+}
+
+.cart-container .product-box .name {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3rem;
+    height: 100%;
+    padding: 10px;
+    border-radius: 1rem;
+    font-size: 14px;
+
+}
+
+.cart-container .product-box .buttons {
+    padding: 30px 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 1rem;
+    width: 20%;
+
+    button {
+        width: 100px;
+        height: 40px;
+        color: #fff;
+        border-radius: 8px;
+        border: 0;
+        outline: unset;
+        cursor: pointer;
+    }
+
+    button {
+        background-color: #000;
+
+        &:active {
+            background-color: rgb(33, 32, 32);
+        }
+    }
+}
+
+
+.footer {
+    width: 100%;
+    background-color: #000;
+}
+
+.footer .container-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    padding: 6% 9%;
+
+}
+
+.footer .container-box .box {
+    text-transform: capitalize;
+
+}
+
+.footer .container-box .box {
+    h1 {
+        color: #fff;
+    }
+
+    p {
+        color: #fff;
+        padding-top: 1rem;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 1rem;
+        text-transform: capitalize;
+
+        li {
+            cursor: pointer;
+        }
+    }
+
+    a {
+        color: #fff;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+}
+
+.footer .copyright {
+    width: 100%;
+    background-color: #fff;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:1066px) {
+    html {
+        font-size: 50%;
+    }
+}

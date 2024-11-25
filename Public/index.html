@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Items</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">Hacker's Test</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./">about</a></li>
+                <li><a href="./cart.html">Service</a></li>
+                <li><a href="./myorder.html">Order</a></li>
+            </ul>
+        </nav>
+        <div class="uers">
+            <div id="cart-count">
+                <div class="count" id="count"></div><i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </header>
+
+    <section class="home hero" id="home">
+        <div class="container-box">
+            <div class="box content">
+                <h1>we are technologists and entrepreneurs.</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam nemo quo fuga minus maxime illum
+                    accusamus
+                    aliquam aut. Eum ad quasi molestias magni exercitationem omnis libero, nam adipisci in illum
+                    amet? Provident
+                    aperiam culpa, tempore ratione quos dignissimos asperiores rerum!</p>
+                <button> <a href="#product">Shop Now</a></button>
+            </div>
+            <div class="box image">
+                <div class="box image">
+                    <img src="./image/hero-image.png" alt="hero image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <select id="category" class="category">
+        <option value="">Category</option>
+        <option value="Electric">Electric</option>
+        <option value="Kides">Kides</option>
+        <option value="Fruits">Fruits</option>
+    </select>
+    
+    <section class="product" id="product">
+
+        <div class="product-container" id="product-container">
+        </div>
+    </section>
+
+   
+
+
+    <section class="contact" id="contact">
+        <div class="heading-box">
+            <h1 class="heading">Contact <span>Us</span></h1>
+            <p class="title"></p>
+        </div>
+        <div class="container-box">
+            <div class="box">
+                <div class="input-box">
+                    <input type="text" name="firsname" placeholder="Firsname" id="firsname">
+                    <input type="text" name="lastname" placeholder="Lastname" id="lastname">
+                </div>
+                <input type="email" name="email" placeholder="Email" id="email">
+                <input type="number" name="phone" placeholder="phone" id="number">
+                <textarea name="" id="" placeholder="Message" id="textarea"></textarea>
+                <button id="btncontact">Send Message</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="container-box">
+            <div class="box box1">
+                <h1>about us</h1>
+                <p>Hello my name is momim hussain. I'm a web developer. I create responsive website. </p>
+            </div>
+            <div class="box box2">
+                <h1>Use full link</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#service">Service</a></li>
+                </ul>
+            </div>
+            <div class="box box3">
+                <h1>Social link</h1>
+                <ul>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">instagram</a></li>
+                    <li><a href="#">Linkdin</a></li>
+                    <li><a href="#">twiter</a></li>
+                </ul>
+            </div>
+            <div class="box box4">
+                <h1>Contact us</h1>
+                <ul>
+                    <li><a href="#">+92-3112891862</a></li>
+                    <li><a href="#">mominqayoome346@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>create by Momin Hussain All right reserve</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

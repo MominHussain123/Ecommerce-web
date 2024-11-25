@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Pannel</title>
+    <link rel="stylesheet" href="./style/admin.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">Hacker's Test</a>
+        </div>
+    </header>
+
+    <div class="left">
+        <ul>
+            <li onclick="AddItem()">Add Item</li>
+            <li onclick="ListItem()">List Item</li>
+            <li onclick="Order()">Order</li>
+            <li onclick="Users()">Users</li>
+        </ul>
+    </div>
+
+    <div class="right">
+        <section class="admin" id="admin">
+            <div class="container">
+                <div class="form-container" id="form-container">
+                    <div class="admin-form">
+                        <input type="file" id="productImg"><br>
+                        <input type="text" placeholder="product price" id="productPrics"><br>
+                        <input type="text" placeholder="product name" id="productName"><br>
+                        <input type="text" placeholder="category name" id="categoryName"><br>
+                        <input type="submit" id="addItem" value="Add Item" onclick="addProduct()">
+                    </div>
+                </div>
+                <div class="admin-container" id="admin-container">
+
+                </div>
+
+
+                <div id="order-container" class="order-container">
+                    <div class="Order-box"></div>
+                </div>
+
+                <div id="User-container" class="User-container">
+                    <h1>Admin - User Management</h1>
+                    <table id="userTable" class="userTable">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/admin.js"></script>
+</body>
+
+</html>
